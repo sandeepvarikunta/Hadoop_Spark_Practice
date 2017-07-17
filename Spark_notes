@@ -1,0 +1,43 @@
+Databrics:
+
+
+left side
+cluster -> 
+create a cluster
+
+test
+spark 1.6.3-db1(hadoop2 scala2.10)
+
+
+click on create cluster
+
+
+create table
+--------------------
+
+cluster : test
+datasource : File
+drag file
+/FileStore/tables/uffdg06w1498373916865/data_10.txt
+
+preview table
+
+table name; sample
+filetpe; csv
+
+
+click on 'create table'
+
+
+
+databricks->notebook-> select scala give name
+
+
+
+
+val rdd = sc.textFile("dbfs:/FileStore/tables/uffdg06w1498373916865/data_10.txt")
+rdd.collect().foreach(println)
+
+workspace->documentation
+
+we can learn everything here.everything is explained with examples.
